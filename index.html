@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio Alcantara Azevedo | Representante Comercial Dellys Food Service</title>
+    <meta name="description" content="Sou Fabio Alcantara Azevedo, representante comercial da Dellys, o maior distribuidor Food Service do Brasil. Mais de 25 mil produtos para supermercados, restaurantes, padarias, peixarias e mais. Entre em contato!">
+    <meta name="keywords" content="Dellys, Food Service, distribuidor alimentos, representante comercial, supermercado, restaurante, padaria, peixaria, conveniência, atacado alimentos, Fabio Alcantara">
+    <meta name="author" content="Fabio Alcantara Azevedo">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fabio Alcantara Azevedo | Representante Comercial Dellys">
+    <meta property="og:description" content="Representante comercial do maior distribuidor Food Service do Brasil. Mais de 25 mil produtos com atendimento personalizado para o seu negócio.">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Fabio Azevedo - Dellys Food Service">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fabio Alcantara Azevedo | Representante Dellys">
+    <meta name="twitter:description" content="Representante comercial do maior distribuidor Food Service do Brasil. Mais de 25 mil produtos com atendimento personalizado.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1e293b;
+            background: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== VARIABLES ===== */
+        :root {
+            --primary: #1a56db;
+            --primary-dark: #1338a0;
+            --primary-light: #e8efff;
+            --accent: #f97316;
+            --accent-light: #fff7ed;
+            --dark: #0f172a;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --white: #ffffff;
+            --radius: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 60px rgba(0,0,0,0.12);
+        }
+
+        /* ===== UTILITY ===== */
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 100px 0; }
+        .text-center { text-align: center; }
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary), #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 16px 0;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .navbar .container {
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .navbar-brand {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.3rem; font-weight: 800;
+            color: var(--primary-dark);
+            text-decoration: none;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .navbar-brand .brand-dot {
+            width: 10px; height: 10px; border-radius: 50%;
+            background: var(--accent);
+            display: inline-block;
+        }
+        .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+        .nav-links a {
+            text-decoration: none; color: var(--gray-600);
+            font-size: 0.9rem; font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-cta {
+            background: var(--primary) !important; color: var(--white) !important;
+            padding: 10px 24px !important; border-radius: 50px !important;
+            font-weight: 600 !important; font-size: 0.85rem !important;
+            transition: all 0.3s ease !important;
+        }
+        .nav-cta:hover { background: var(--primary-dark) !important; transform: translateY(-1px); }
+        .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+        .mobile-toggle span {
+            display: block; width: 24px; height: 2px;
+            background: var(--dark); margin: 5px 0;
+            transition: all 0.3s;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex; align-items: center;
+            padding-top: 80px;
+            background: linear-gradient(160deg, var(--white) 0%, var(--primary-light) 50%, var(--white) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute; top: -50%; right: -20%;
+            width: 800px; height: 800px;
+            background: radial-gradient(circle, rgba(26,86,219,0.06) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero::after {
+            content: '';
+            position: absolute; bottom: -30%; left: -10%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(249,115,22,0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative; z-index: 2;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.8rem; font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+        .hero-badge .pulse {
+            width: 8px; height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.5); }
+        }
+        .hero h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 3.2rem; font-weight: 800;
+            line-height: 1.15;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--gray-600);
+            margin-bottom: 36px;
+            max-width: 500px;
+            line-height: 1.7;
+        }
+        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-size: 1rem; font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer; border: none;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(26,86,219,0.3);
+        }
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(26,86,219,0.4);
+        }
+        .btn-outline {
+            background: var(--white);
+            color: var(--primary);
+            border: 2px solid var(--gray-200);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+        .btn-whatsapp {
+            background: #25d366;
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(37,211,102,0.3);
+        }
+        .btn-whatsapp:hover {
+            background: #1fb855;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+        }
+
+        /* Hero Visual */
+        .hero-visual {
+            position: relative;
+            display: flex; justify-content: center; align-items: center;
+        }
+        .hero-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            width: 100%;
+            max-width: 440px;
+        }
+        .hero-card-header {
+            display: flex; align-items: center; gap: 16px;
+            margin-bottom: 28px;
+        }
+        .hero-avatar {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), #6366f1);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--white);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.5rem; font-weight: 800;
+        }
+        .hero-card-name { font-weight: 700; color: var(--dark); font-size: 1.1rem; }
+        .hero-card-role { font-size: 0.85rem; color: var(--gray-500); }
+        .hero-stats {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+        }
+        .hero-stat {
+            background: var(--gray-50);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero-stat-number {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.6rem; font-weight: 800;
+            color: var(--primary);
+        }
+        .hero-stat-label {
+            font-size: 0.75rem; color: var(--gray-500);
+            margin-top: 4px; font-weight: 500;
+        }
+        .hero-floating-badge {
+            position: absolute;
+            background: var(--white);
+            padding: 12px 20px;
+            border-radius: 14px;
+            box-shadow: var(--shadow-lg);
+            font-size: 0.8rem; font-weight: 600;
+            display: flex; align-items: center; gap: 8px;
+            animation: float 3s ease-in-out infinite;
+        }
+        .floating-1 { top: -20px; right: -20px; }
+        .floating-2 { bottom: -15px; left: -20px; animation-delay: 1.5s; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar {
+            padding: 60px 0;
+            background: var(--white);
+            border-top: 1px solid var(--gray-100);
+            border-bottom: 1px solid var(--gray-100);
+        }
+        .trust-items {
+            display: flex; justify-content: center; align-items: center;
+            gap: 48px; flex-wrap: wrap;
+        }
+        .trust-item {
+            text-align: center;
+        }
+        .trust-number {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2rem; font-weight: 800;
+            color: var(--primary);
+        }
+        .trust-label {
+            font-size: 0.8rem; color: var(--gray-500);
+            font-weight: 500; margin-top: 4px;
+        }
+        .trust-divider {
+            width: 1px; height: 50px; background: var(--gray-200);
+        }
+
+        /* ===== ABOUT ===== */
+        .about {
+            background: var(--gray-50);
+        }
+        .about .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .about-visual {
+            position: relative;
+        }
+        .about-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: var(--shadow-lg);
+        }
+        .about-icon {
+            width: 64px; height: 64px;
+            background: linear-gradient(135deg, var(--primary-light), #ede9fe);
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+        }
+        .about-quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--gray-700);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        .about-author {
+            font-weight: 700; color: var(--dark);
+        }
+        .about-author span {
+            display: block;
+            font-weight: 400; font-size: 0.85rem;
+            color: var(--gray-500);
+            margin-top: 2px;
+        }
+        .section-label {
+            display: inline-flex; align-items: center; gap: 8px;
+            font-size: 0.8rem; font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+        }
+        .section-label::before {
+            content: '';
+            width: 24px; height: 2px;
+            background: var(--accent);
+            display: inline-block;
+        }
+        .about-content h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.4rem; font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .about-content p {
+            font-size: 1.05rem;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        .about-features {
+            display: flex; flex-direction: column; gap: 16px;
+            margin-top: 32px;
+        }
+        .about-feature {
+            display: flex; align-items: flex-start; gap: 14px;
+        }
+        .about-feature-icon {
+            width: 40px; height: 40px; min-width: 40px;
+            background: var(--primary-light);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem;
+        }
+        .about-feature-text h4 {
+            font-size: 0.95rem; font-weight: 700; color: var(--dark);
+        }
+        .about-feature-text p {
+            font-size: 0.85rem; color: var(--gray-500);
+            margin-bottom: 0; line-height: 1.5;
+        }
+
+        /* ===== SEGMENTS ===== */
+        .segments { background: var(--white); }
+        .segments-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .segments-header h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.4rem; font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+        .segments-header p {
+            font-size: 1.05rem;
+            color: var(--gray-500);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        .segments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .segment-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 20px;
+            padding: 36px 28px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+        .segment-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        .segment-icon {
+            width: 64px; height: 64px;
+            margin: 0 auto 20px;
+            background: var(--gray-50);
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem;
+            transition: all 0.3s;
+        }
+        .segment-card:hover .segment-icon {
+            background: var(--primary-light);
+        }
+        .segment-card h3 {
+            font-size: 1.05rem; font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+        .segment-card p {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            line-height: 1.5;
+        }
+
+        /* ===== PRODUCTS ===== */
+        .products { background: var(--gray-50); }
+        .products-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .products-header h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.4rem; font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+        .products-header p {
+            font-size: 1.05rem;
+            color: var(--gray-500);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .product-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 28px 20px;
+            text-align: center;
+            border: 1px solid var(--gray-100);
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-3px);
+        }
+        .product-emoji {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .product-card h4 {
+            font-size: 0.9rem; font-weight: 700;
+            color: var(--dark);
+        }
+        .product-card p {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+            margin-top: 4px;
+        }
+
+        /* ===== CONTACT / FORM ===== */
+        .contact {
+            background: linear-gradient(160deg, var(--dark) 0%, #1e2a4a 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        .contact::before {
+            content: '';
+            position: absolute; top: 0; right: 0;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(26,86,219,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .contact .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            position: relative; z-index: 2;
+        }
+        .contact-info h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.4rem; font-weight: 800;
+            margin-bottom: 16px;
+        }
+        .contact-info p {
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 36px;
+            line-height: 1.7;
+        }
+        .contact-details { display: flex; flex-direction: column; gap: 20px; }
+        .contact-detail {
+            display: flex; align-items: center; gap: 16px;
+        }
+        .contact-detail-icon {
+            width: 48px; height: 48px; min-width: 48px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem;
+        }
+        .contact-detail-text { font-size: 0.95rem; }
+        .contact-detail-text span {
+            display: block; font-size: 0.8rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .contact-form-wrapper {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: var(--shadow-xl);
+        }
+        .contact-form-wrapper h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.4rem; font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+        .contact-form-wrapper .form-subtitle {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            margin-bottom: 28px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.85rem; font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            background: var(--white);
+            transition: all 0.2s;
+            outline: none;
+            -webkit-appearance: none;
+        }
+        .form-group input::placeholder { color: var(--gray-400); }
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(26,86,219,0.1);
+        }
+        .form-group select {
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 5.646a.5.5 0 0 1 .708 0L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 44px;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem; font-weight: 700;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        .btn-submit:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(26,86,219,0.3);
+        }
+        .form-note {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--gray-400);
+            margin-top: 16px;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--dark);
+            color: rgba(255,255,255,0.5);
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .footer a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+        .footer a:hover { color: var(--white); }
+
+        /* ===== FLOATING WHATSAPP BUTTON ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px; right: 28px;
+            width: 60px; height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37,211,102,0.5);
+        }
+        .whatsapp-float svg { width: 30px; height: 30px; fill: white; }
+
+        /* ===== SUCCESS MESSAGE ===== */
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .success-message.show { display: block; }
+        .success-message .check-icon {
+            width: 64px; height: 64px;
+            background: #d1fae5;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+        }
+        .success-message h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.3rem; font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+        .success-message p {
+            color: var(--gray-500); font-size: 0.9rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 2.6rem; }
+            .about .container,
+            .contact .container { gap: 48px; }
+            .products-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-toggle { display: block; }
+            .nav-links.active {
+                display: flex; flex-direction: column;
+                position: absolute; top: 100%; left: 0; right: 0;
+                background: var(--white);
+                padding: 24px;
+                border-bottom: 1px solid var(--gray-200);
+                box-shadow: var(--shadow-md);
+                gap: 16px;
+            }
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero p { margin: 0 auto 36px; }
+            .hero-buttons { justify-content: center; }
+            .hero-visual { margin-top: 40px; }
+            .hero h1 { font-size: 2.2rem; }
+            .about .container { grid-template-columns: 1fr; }
+            .about-visual { order: -1; }
+            .segments-grid { grid-template-columns: repeat(2, 1fr); }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+            .contact .container { grid-template-columns: 1fr; }
+            .trust-items { gap: 24px; }
+            .trust-divider { display: none; }
+            .section { padding: 72px 0; }
+            .about-content h2,
+            .segments-header h2,
+            .products-header h2,
+            .contact-info h2 { font-size: 1.9rem; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero-card { padding: 28px; }
+            .segments-grid { grid-template-columns: 1fr; }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero-floating-badge { display: none; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="navbar-brand">
+            <span class="brand-dot"></span> Fabio Azevedo
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#segmentos">Segmentos</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#contato" class="nav-cta">Fale Comigo</a></li>
+        </ul>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                Representante Comercial Dellys
+            </div>
+            <h1>O parceiro que seu<br>negócio precisa em<br><span class="gradient-text">Food Service</span></h1>
+            <p>Sou Fabio Alcantara Azevedo, representante comercial do maior distribuidor de Food Service do Brasil. Trago até você mais de 25 mil produtos com atendimento próximo e personalizado.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5511990091592?text=Ol%C3%A1%20Fabio!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn btn-whatsapp" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.549 4.107 1.511 5.839L.057 23.802l6.174-1.429A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.97 0-3.838-.528-5.457-1.482l-.392-.232-3.66.848.882-3.546-.258-.41A9.782 9.782 0 012.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z"/></svg>
+                    Chamar no WhatsApp
+                </a>
+                <a href="#contato" class="btn btn-outline">Solicitar Contato</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div class="hero-floating-badge floating-1">
+                    <span>&#x1F3C6;</span> 1º Ranking ABAD
+                </div>
+                <div class="hero-card-header">
+                    <div class="hero-avatar">FA</div>
+                    <div>
+                        <div class="hero-card-name">Fabio Alcantara Azevedo</div>
+                        <div class="hero-card-role">Representante Comercial | Dellys Food Service</div>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">25mil</div>
+                        <div class="hero-stat-label">Produtos disponíveis</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">180mil+</div>
+                        <div class="hero-stat-label">Clientes atendidos</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">80%</div>
+                        <div class="hero-stat-label">Território nacional</div>
+                    </div>
+                    <div class="hero-stat">
+                                <div class="hero-stat-number">R$5,5bi</div>
+                        <div class="hero-stat-label">Faturamento anual</div>
+                    </div>
+                </div>
+                <div class="hero-floating-badge floating-2">
+                    <span>&#x1F4E6;</span> Entrega em todo Brasil
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar">
+    <div class="container">
+        <div class="trust-items">
+            <div class="trust-item">
+                <div class="trust-number">25.000+</div>
+                <div class="trust-label">Produtos no Catálogo</div>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <div class="trust-number">180.000+</div>
+                <div class="trust-label">Clientes Atendidos</div>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <div class="trust-number">1º Lugar</div>
+                <div class="trust-label">Ranking ABAD</div>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <div class="trust-number">16+</div>
+                <div class="trust-label">Empresas no Grupo</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="sobre">
+    <div class="container">
+        <div class="about-visual">
+            <div class="about-card">
+                <div class="about-icon">&#x1F91D;</div>
+                <p class="about-quote">"Meu compromisso é fazer com que cada cliente se sinta único. Não ofereço apenas produtos, mas soluções pensadas especialmente para o seu negócio."</p>
+                <div class="about-author">
+                    Fabio Alcantara Azevedo
+                    <span>Representante Comercial | Dellys Food Service</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="section-label">Sobre Mim</div>
+            <h2>Atendimento personalizado para o <span class="gradient-text">seu negócio</span></h2>
+            <p>Sou Fabio Alcantara Azevedo, representante comercial da Dellys, o maior distribuidor Food Service do Brasil. Trabalho para entender as necessidades reais de cada cliente e oferecer as melhores soluções em abastecimento.</p>
+            <p>Com o respaldo de uma empresa que fatura R$ 5,5 bilhões por ano e atende mais de 180 mil clientes, garanto agilidade, variedade e preços competitivos para o seu estabelecimento.</p>
+            <div class="about-features">
+                <div class="about-feature">
+                    <div class="about-feature-icon">&#x1F3AF;</div>
+                    <div class="about-feature-text">
+                        <h4>Atendimento Sob Medida</h4>
+                        <p>Entendo o seu segmento e monto uma proposta personalizada para as suas necessidades.</p>
+                    </div>
+                </div>
+                <div class="about-feature">
+                    <div class="about-feature-icon">&#x26A1;</div>
+                    <div class="about-feature-text">
+                        <h4>Agilidade na Resposta</h4>
+                        <p>Retorno rápido pelo WhatsApp, sem burocracia. Seu tempo é valioso.</p>
+                    </div>
+                </div>
+                <div class="about-feature">
+                    <div class="about-feature-icon">&#x1F4CA;</div>
+                    <div class="about-feature-text">
+                        <h4>Portfólio Completo</h4>
+                        <p>Mais de 25 mil itens, das melhores marcas, para abastecer seu negócio por completo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEGMENTS -->
+<section class="segments section" id="segmentos">
+    <div class="container">
+        <div class="segments-header">
+            <div class="section-label" style="justify-content: center;">Quem eu atendo</div>
+            <h2>Soluções para <span class="gradient-text">todos os segmentos</span></h2>
+            <p>Não importa o tamanho do seu negócio. Tenho o produto certo e o atendimento que você merece.</p>
+        </div>
+        <div class="segments-grid">
+            <div class="segment-card">
+                <div class="segment-icon">&#x1F6D2;</div>
+                <h3>Supermercados</h3>
+                <p>Variedade e volume para manter suas gôndolas sempre abastecidas.</p>
+            </div>
+            <div class="segment-card">
+                <div class="segment-icon">&#x1F373;</div>
+                <h3>Restaurantes</h3>
+                <p>Ingredientes de qualidade para elevar o nível do seu cardápio.</p>
+            </div>
+            <div class="segment-card">
+                <div class="segment-icon">&#x1F41F;</div>
+                <h3>Peixarias</h3>
+                <p>Pescados frescos e congelados das melhores procedências.</p>
+            </div>
+            <div class="segment-card">
+                <div class="segment-icon">&#x1F35E;</div>
+                <h3>Padarias</h3>
+                <p>Insumos para panificação e confeitaria com preços competitivos.</p>
+            </div>
+            <div class="segment-card">
+                <div class="segment-icon">&#x1F3EA;</div>
+                <h3>Conveniências</h3>
+                <p>Produtos práticos e de alta rotatividade para seu ponto de venda.</p>
+            </div>
+            <div class="segment-card">
+                <div class="segment-icon">&#x1F3E0;</div>
+                <h3>Pessoa Física</h3>
+                <p>Você também pode comprar! Produtos alimentícios de qualidade para sua casa.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products section" id="produtos">
+    <div class="container">
+        <div class="products-header">
+            <div class="section-label" style="justify-content: center;">Catálogo</div>
+            <h2>Mais de <span class="gradient-text">25 mil produtos</span> à sua disposição</h2>
+            <p>Confira as principais categorias. Quer o catálogo completo? É só me chamar!</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <span class="product-emoji">&#x1F954;</span>
+                <h4>Batatas</h4>
+                <p>Pré-fritas, rústicas e mais</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F955;</span>
+                <h4>Vegetais</h4>
+                <p>Frescos e congelados</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F969;</span>
+                <h4>Bovinos</h4>
+                <p>Cortes nobres e populares</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F357;</span>
+                <h4>Aves</h4>
+                <p>Frango e derivados</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F416;</span>
+                <h4>Suínos</h4>
+                <p>Cortes e embutidos</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F41F;</span>
+                <h4>Pescados</h4>
+                <p>Salmão, tilápia e mais</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F9C0;</span>
+                <h4>Laticínios</h4>
+                <p>Queijos e derivados</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F6D2;</span>
+                <h4>Mercearia</h4>
+                <p>Óleos, molhos e temperos</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F370;</span>
+                <h4>Confeitaria</h4>
+                <p>Insumos para doces e pães</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F379;</span>
+                <h4>Bebidas</h4>
+                <p>Sucos, águas e mais</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F371;</span>
+                <h4>Orientais</h4>
+                <p>Especialidades da culinária oriental</p>
+            </div>
+            <div class="product-card">
+                <span class="product-emoji">&#x1F944;</span>
+                <h4>Utensílios</h4>
+                <p>Descartáveis e acessórios</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section" id="contato">
+    <div class="container">
+        <div class="contact-info">
+            <div class="section-label" style="color: rgba(255,255,255,0.6);">Contato</div>
+            <h2>Vamos conversar sobre o que seu negócio precisa?</h2>
+            <p>Preencha o formulário ao lado ou, se preferir, me chame direto no WhatsApp. Respondo rápido e sem burocracia!</p>
+            <div class="contact-details">
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">&#x1F4F1;</div>
+                    <div class="contact-detail-text">
+                        (11) 99009-1592
+                        <span>WhatsApp</span>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">&#x1F3E2;</div>
+                    <div class="contact-detail-text">
+                        Dellys Food Service
+                        <span>Maior distribuidor do Brasil</span>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">&#x1F310;</div>
+                    <div class="contact-detail-text">
+                        <a href="https://www.dellys.com.br" target="_blank" style="color: white; text-decoration: none;">www.dellys.com.br</a>
+                        <span>Site oficial da Dellys</span>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 36px;">
+                <a href="https://wa.me/5511990091592?text=Ol%C3%A1%20Fabio!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn btn-whatsapp" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.549 4.107 1.511 5.839L.057 23.802l6.174-1.429A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.97 0-3.838-.528-5.457-1.482l-.392-.232-3.66.848.882-3.546-.258-.41A9.782 9.782 0 012.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z"/></svg>
+                    Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="contact-form-wrapper">
+            <div id="formContent">
+                <h3>Solicite um contato</h3>
+                <p class="form-subtitle">Preencha abaixo e retorno em até 24h.</p>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="nome">Seu nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Como posso te chamar?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="segmento">Seu segmento</label>
+                        <select id="segmento" name="segmento" required>
+                            <option value="" disabled selected>Selecione seu segmento</option>
+                            <option value="supermercado">Supermercado</option>
+                            <option value="restaurante">Restaurante</option>
+                            <option value="peixaria">Peixaria</option>
+                            <option value="padaria">Padaria</option>
+                            <option value="conveniencia">Conveniência / Loja</option>
+                            <option value="pessoa-fisica">Pessoa Física</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        Quero ser contatado
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </form>
+                <p class="form-note">Seus dados estão seguros. Usarei apenas para entrar em contato com você.</p>
+            </div>
+            <div class="success-message" id="successMessage">
+                <div class="check-icon">&#x2705;</div>
+                <h3>Mensagem enviada!</h3>
+                <p>Obrigado pelo interesse! Vou te responder em breve pelo WhatsApp.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Fabio Alcantara Azevedo | Representante Comercial Dellys Food Service</p>
+        <p style="margin-top: 8px;">(11) 99009-1592 &middot; <a href="https://www.dellys.com.br" target="_blank" rel="noopener noreferrer">www.dellys.com.br</a></p>
+    </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/5511990091592?text=Ol%C3%A1%20Fabio!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.549 4.107 1.511 5.839L.057 23.802l6.174-1.429A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.97 0-3.838-.528-5.457-1.482l-.392-.232-3.66.848.882-3.546-.258-.41A9.782 9.782 0 012.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z"/></svg>
+</a>
+
+<script>
+    // Mobile menu toggle
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+        document.getElementById('navLinks').classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('active');
+        });
+    });
+
+    // WhatsApp mask
+    document.getElementById('whatsapp').addEventListener('input', function(e) {
+        let value = e.target.value.replace(/\D/g, '');
+        if (value.length > 11) value = value.slice(0, 11);
+        if (value.length > 7) {
+            value = `(${value.slice(0,2)}) ${value.slice(2,7)}-${value.slice(7)}`;
+        } else if (value.length > 2) {
+            value = `(${value.slice(0,2)}) ${value.slice(2)}`;
+        } else if (value.length > 0) {
+            value = `(${value}`;
+        }
+        e.target.value = value;
+    });
+
+    // Form submission
+    function handleSubmit(e) {
+        e.preventDefault();
+        const nome = document.getElementById('nome').value;
+        const whatsapp = document.getElementById('whatsapp').value;
+        const segmento = document.getElementById('segmento').value;
+
+        // Build WhatsApp message with form data
+        const msg = encodeURIComponent(
+            `Novo lead via site!\n\nNome: ${nome}\nWhatsApp: ${whatsapp}\nSegmento: ${segmento}`
+        );
+
+        // Open WhatsApp with the lead info (sends to Fabio)
+        window.open(`https://wa.me/5511990091592?text=${msg}`, '_blank');
+
+        // Show success message
+        document.getElementById('formContent').querySelector('form').style.display = 'none';
+        document.getElementById('formContent').querySelector('h3').style.display = 'none';
+        document.getElementById('formContent').querySelector('.form-subtitle').style.display = 'none';
+        document.getElementById('formContent').querySelector('.form-note').style.display = 'none';
+        document.getElementById('successMessage').classList.add('show');
+    }
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.padding = '10px 0';
+            navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.06)';
+        } else {
+            navbar.style.padding = '16px 0';
+            navbar.style.boxShadow = 'none';
+        }
+    });
+
+    // Smooth reveal animation on scroll
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.segment-card, .product-card, .about-feature, .trust-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'all 0.6s ease';
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
